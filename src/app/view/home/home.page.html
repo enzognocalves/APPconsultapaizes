@@ -1,0 +1,71 @@
+<ion-content [fullscreen]="true">
+  <div class="home-content">
+    <div class="home-container">
+      
+      <!-- Card Principal -->
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <div class="home-title">
+            <ion-icon name="globe"></ion-icon>
+            Consulta de Países
+          </div>
+          <ion-card-subtitle class="home-subtitle">
+            Descubra informações detalhadas de qualquer país do mundo
+          </ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          <div class="icon-container">
+            <ion-icon name="search" class="main-icon"></ion-icon>
+          </div>
+          
+          <p class="description">
+            Utilize nossa ferramenta para consultar dados atualizados sobre países, 
+            incluindo capital, população, moedas, idiomas e muito mais.
+          </p>
+
+          <ion-button 
+            expand="block" 
+            (click)="goToCountries()" 
+            class="start-button"
+            size="large">
+            <ion-icon name="search" slot="start"></ion-icon>
+            Iniciar Consulta
+          </ion-button>
+
+          <!-- Cards de Informação -->
+          <div class="home-info-cards">
+            <div class="info-card">
+              <ion-icon name="checkmark-circle"></ion-icon>
+              <div class="info-card-content">
+                <h3>Rápido</h3>
+                <p>Consulta instantânea</p>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <ion-icon name="car-outline"></ion-icon>
+              <div class="info-card-content">
+                <h3>Simples</h3>
+                <p>Interface intuitiva</p>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <ion-icon name="arrow-forward"></ion-icon>
+              <div class="info-card-content">
+                <h3>Completo</h3>
+                <p>Dados detalhados</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="home-footer">
+            Explore o mundo com apenas um clique
+          </p>
+        </ion-card-content>
+      </ion-card>
+
+    </div>
+  </div>
+</ion-content>
